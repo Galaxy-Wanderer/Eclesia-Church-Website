@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin background() {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import './nav';
+@import './hero';

@@ -1,0 +1,65 @@
+.hero {
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 75vh;
+    width: 100vw;
+    margin-top: 4px;
+    .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: calc(1vw + 1rem);
+        h1 {
+            font-size: calc(2vw + 1.5rem);
+        }
+        p {
+            line-height: calc(1.5vw + 2rem);
+        }
+    }
+    .current {
+        opacity: 1;
+    }
+    .slide:nth-child(1) {
+        background: url(../images/cross.jpg);
+        @include background();
+    }
+    .slide:nth-child(2) {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Gospel.jpg);
+        @include background();
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .slide:nth-child(3) {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/world.jpg);
+        @include background();
+    }
+    button {
+        position: absolute;
+        height: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    button#next {
+        right: 1vw;
+    }
+    button#prev {
+        left: 1vw;
+    }
+    button img {
+        filter: invert(100%);
+        width: calc(2vw + 2rem);
+    }
+}
