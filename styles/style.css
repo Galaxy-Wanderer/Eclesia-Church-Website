@@ -267,6 +267,10 @@ nav {
   margin-top: 1vw;
 }
 
+hr {
+  margin: 1rem auto;
+}
+
 .text {
   width: 75vw;
   margin: 3rem auto;
@@ -285,7 +289,7 @@ nav {
   display: grid;
   width: 95vw;
   margin: 2rem auto;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(2, 1fr);
   -webkit-box-shadow: 0px 0px 20px gray;
           box-shadow: 0px 0px 20px gray;
@@ -309,6 +313,98 @@ nav {
       align-self: center;
   font-size: 2rem;
   line-height: 5rem;
+}
+
+form {
+  width: 75vw;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 5px gray;
+          box-shadow: 0px 0px 5px gray;
+  padding: 1rem;
+}
+
+form h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+form div {
+  position: relative;
+}
+
+form div input {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  padding: 3px 0px;
+  margin-top: 2rem;
+}
+
+form div label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+form div label span {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+form div label::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  border-bottom: 3px solid #083a74;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+form div input:focus + label span, form div input:valid + label span {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  color: #083a74;
+}
+
+form div input:focus + label::after, form div input:valid + label::after {
+  width: 100%;
+}
+
+form button {
+  border: none;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#548eeb), to(lightskyblue));
+  background: linear-gradient(#548eeb, lightskyblue);
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -351,7 +447,7 @@ nav {
   }
   .cards .card {
     width: 60vw;
-    margin-top: 1rem;
+    margin: 2rem auto;
     line-height: 3rem;
   }
   .cards .card h2 {
@@ -376,7 +472,7 @@ nav {
     width: 90vw;
   }
   .text {
-    widows: 90vw;
+    width: 90vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
