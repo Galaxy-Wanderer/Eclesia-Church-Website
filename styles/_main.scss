@@ -157,7 +157,7 @@ form {
         flex-direction: column;
         .card {
             width: 60vw;
-            margin: 5rem auto;
+            margin: 2rem auto;
             h2 {
                 font-size: 1.5rem;
             }
@@ -175,6 +175,9 @@ form {
         h1 {
             font-size: 1.5rem;
         }
+    }
+    form {
+        width: 90vw;
     }
 }
 @media screen and (max-width: 600px) {
