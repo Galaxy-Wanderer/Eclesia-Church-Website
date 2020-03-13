@@ -277,6 +277,38 @@ nav {
 
 .text p {
   text-align: left;
+  margin-top: 1vh;
+}
+
+.city-section {
+  display: -ms-grid;
+  display: grid;
+  width: 95vw;
+  margin: 2rem auto;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-shadow: 0px 0px 20px gray;
+          box-shadow: 0px 0px 20px gray;
+}
+
+.city-section h1 {
+  background: url(../images/palas-iasi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 10rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.city-section p {
+  padding: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2rem;
+  line-height: 5rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -286,6 +318,27 @@ nav {
   }
   .text h1 {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .city-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .city-section h1 {
+    padding: 3rem;
+    font-size: 1.5rem;
+  }
+  .city-section p {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 2.75rem;
   }
 }
 
