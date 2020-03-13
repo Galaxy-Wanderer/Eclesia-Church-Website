@@ -1,5 +1,4 @@
 .cards {
-    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -30,7 +29,7 @@ hr {
 }
 .text {
     width: 75vw;
-    margin: 3rem auto;
+    margin: 10rem auto;
     font-size: 1.5rem;
     line-height: 4rem;
     text-align: center;
@@ -83,12 +82,11 @@ form {
             width: 100%;
             height: 100%;
             font-size: 1rem;
-            padding: 3px 0px;
             margin-top: 2rem;
         }
         label {
             position: absolute;
-            bottom: 0px;
+            bottom: 0%;
             left: 0px;
             width: 100%;
             height: 100%;
@@ -127,7 +125,7 @@ form {
         border-radius: 5px;
         padding: 0.5rem;
         font-size: 1rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 }
 @media screen and (max-width: 1500px) {
@@ -159,7 +157,7 @@ form {
         flex-direction: column;
         .card {
             width: 60vw;
-            margin: 2rem auto;
+            margin: 5rem auto;
             h2 {
                 font-size: 1.5rem;
             }
