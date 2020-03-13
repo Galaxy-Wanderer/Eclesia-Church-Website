@@ -1,5 +1,4 @@
 .hero {
-    font-family: 'Roboto Slab', serif;
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -13,7 +12,7 @@
         width: 100%;
         height: 100%;
         opacity: 0;
-        transition: opacity 0.4s ease-in-out;
+        transition: opacity 0.7s ease-in-out;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -30,15 +29,12 @@
         opacity: 1;
     }
     .slide:nth-child(1) {
-        background: url(../images/cross.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/hill.jpg);
         @include background();
     }
     .slide:nth-child(2) {
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Gospel.jpg);
         @include background();
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
     .slide:nth-child(3) {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/world.jpg);

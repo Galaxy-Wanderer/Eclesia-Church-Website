@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
 }
 @mixin background() {
     background-repeat: no-repeat;
@@ -11,3 +12,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import './nav';
 @import './hero';
+@import './main';

@@ -4,6 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
 }
 
 body {
@@ -14,6 +15,7 @@ header {
   width: 100vw;
   -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
 }
 
 nav {
@@ -51,7 +53,6 @@ nav {
 .links li a {
   text-decoration: none;
   font-size: calc(1vw + 5px);
-  font-family: 'Roboto Slab', serif;
   color: black;
 }
 
@@ -137,7 +138,6 @@ nav {
 }
 
 .hero {
-  font-family: 'Roboto Slab', serif;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -153,8 +153,8 @@ nav {
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,7 +181,8 @@ nav {
 }
 
 .hero .slide:nth-child(1) {
-  background: url(../images/cross.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(../images/hill.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/hill.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -193,13 +194,6 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
 }
 
 .hero .slide:nth-child(3) {
@@ -231,5 +225,106 @@ nav {
   -webkit-filter: invert(100%);
           filter: invert(100%);
   width: calc(2vw + 2rem);
+}
+
+.cards {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards .card {
+  width: 25vw;
+  -webkit-box-shadow: 0px 0px 1rem gray;
+          box-shadow: 0px 0px 1rem gray;
+  text-align: center;
+  font-size: 1.25vw;
+  line-height: 2vw;
+}
+
+.cards .card img {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards .card h2 {
+  margin-top: 1vw;
+}
+
+.cards .card p {
+  font-size: 1.25vw;
+  padding: 1vw;
+  margin-top: 1vw;
+}
+
+.text {
+  width: 75vw;
+  margin: 3rem auto;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.text p {
+  text-align: left;
+}
+
+@media screen and (max-width: 1500px) {
+  .text {
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+  .text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cards .card {
+    width: 60vw;
+    margin-top: 1rem;
+    line-height: 3rem;
+  }
+  .cards .card h2 {
+    font-size: 1.5rem;
+  }
+  .cards .card p {
+    font-size: 1rem;
+  }
+  .text {
+    width: 75vw;
+    font-size: 0.75rem;
+    line-height: 2rem;
+    margin: 1rem auto;
+  }
+  .text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards .card {
+    width: 90vw;
+  }
+  .text {
+    widows: 90vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
