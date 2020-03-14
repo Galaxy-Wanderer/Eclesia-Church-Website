@@ -49,12 +49,12 @@ hr {
         background: url(../images/palas-iasi.jpg);
         @include background();
         text-align: center;
-        padding: 10rem;
+        padding: 20rem 1rem;
         color: white;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     p {
-        padding: 1rem;
+        padding: 5rem;
         align-self: center;
         font-size: 2rem;
         line-height: 5rem;
@@ -62,7 +62,7 @@ hr {
 }
 form {
     width: 75vw;
-    margin: 2rem auto;
+    margin: 2rem auto 7rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +82,7 @@ form {
             width: 100%;
             height: 100%;
             font-size: 1rem;
-            margin-top: 2rem;
+            margin-top: 4rem;
         }
         label {
             position: absolute;
@@ -125,7 +125,7 @@ form {
         border-radius: 5px;
         padding: 0.5rem;
         font-size: 1rem;
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 }
 @media screen and (max-width: 1500px) {
@@ -142,13 +142,14 @@ form {
         display: flex;
         flex-direction: column;
         h1 {
-            padding: 3rem;
+            padding: 5rem;
             font-size: 1.5rem;
         }
         p {
             text-align: center;
             font-size: 1.25rem;
             line-height: 2.75rem;
+            padding: 1rem;
         }
     }
 }
@@ -159,12 +160,12 @@ form {
             width: 60vw;
             margin: 2rem auto;
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.75rem;
             }
             p {
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
-            line-height: 3rem;
+            line-height: 2.5rem;
         }
     }
     .text {
@@ -188,5 +189,14 @@ form {
     }
     .text {
         width: 90vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    .city-section {
+        p {
+            font-size: 1rem;
+            line-height: 2rem;
+            text-align: left;
+        }
     }
 }
